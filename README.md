@@ -2,6 +2,9 @@
 
 Powered by Meteor and React
 
+### Prerequisites
+You will need to install [Meteor](https://www.meteor.com/install).
+
 ### Setup
 Clone this repo and run:
 ```
