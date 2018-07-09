@@ -11,7 +11,7 @@ Clone this repo and run:
 npm install
 ```
 
-To run the Meteor server, run:
+To start the Meteor development server, run:
 ```
 meteor
 ```
