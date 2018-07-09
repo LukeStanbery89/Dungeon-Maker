@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class Navbar extends Component {
 	render () {
 		return (
-			<nav className="navbar navbar-default">
+			<nav className="navbar navbar-inverse navbar-default">
 				<div className="container-fluid">
 					{/*Brand and toggle get grouped for better mobile display*/}
 					<div className="navbar-header">

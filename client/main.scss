@@ -1,0 +1,25 @@
+body {
+	background-color: black;
+	color: white;
+
+	.navbar {
+		margin-bottom: 0;
+	}
+	.game-board {
+		width: 100%;
+		height: calc(100vh - 52px);
+		overflow: scroll;
+
+		.tile-row {
+			display: inline-flex;
+
+			.tile {
+				height: 60px;
+				width: 60px;
+				border: 1px solid white;
+				box-sizing: border-box;
+				display: inline-block;
+			}
+		}
+	}
+}

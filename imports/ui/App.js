@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar.js';
+import Gameboard from './Gameboard.js';
 
 // Constants
 const APP_NAME = 'Dungeon Maker';
@@ -10,6 +11,7 @@ export default class App extends Component {
 		return (
 			<div className="app-container">
 				<Navbar appName={APP_NAME}/>
+				<Gameboard/>
 			</div>
 		);
 	}
