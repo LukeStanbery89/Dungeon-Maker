@@ -1,6 +1,9 @@
+$black: #101010;
+$white: #FFF;
+
 body {
-	background-color: black;
-	color: white;
+	background-color: $black;
+	color: $white;
 
 	.navbar {
 		margin-bottom: 0;
@@ -14,11 +17,21 @@ body {
 			display: inline-flex;
 
 			.tile {
+				padding: 4px;
 				height: 60px;
 				width: 60px;
-				border: 1px solid white;
+				border: 1px solid $white;
 				box-sizing: border-box;
 				display: inline-block;
+				color: $black;
+				user-select: none;
+				transition: background-color 0.5s, color 0.5s;
+
+				&.visible {
+					background-color: $white;
+					color: $white;
+					border-color: $black;
+				}
 			}
 		}
 	}
