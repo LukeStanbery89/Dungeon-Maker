@@ -3,11 +3,21 @@ import Navbar from "./Navbar.js";
 import Gameboard from "./Gameboard.js";
 
 export default class Game extends Component {
+	renderGameboard() {
+		if (this.props.game) {
+			console.log("Game: ", this.props.game);
+			return (
+				<Gameboard/>
+			);
+		}
+	}
+
 	render() {
+		console.log(this.props);
 		return (
 			<div className="app-container">
 				<Navbar appName={this.props.appName}/>
-				<Gameboard/>
+				{this.renderGameboard()}
 			</div>
 		);
 	}
