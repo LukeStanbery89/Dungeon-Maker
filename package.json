@@ -2,7 +2,7 @@
   "name": "dungeon-maker",
   "private": true,
   "scripts": {
-    "start": "meteor",
+    "start": "meteor run",
     "test": "meteor test --once --driver-package meteortesting:mocha",
     "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
     "visualize": "meteor --production --extra-packages bundle-visualizer"
@@ -12,7 +12,9 @@
     "classnames": "^2.2.6",
     "meteor-node-stubs": "^0.4.1",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
   },
   "meteor": {
     "mainModule": {

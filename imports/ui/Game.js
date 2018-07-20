@@ -7,13 +7,13 @@ export default class Game extends Component {
 		if (this.props.game) {
 			console.log("Game: ", this.props.game);
 			return (
-				<Gameboard/>
+				<Gameboard game={this.props.game}/>
 			);
 		}
 	}
 
 	render() {
-		console.log(this.props);
+		console.log("Game props: ", this.props);
 		return (
 			<div className="app-container">
 				<Navbar appName={this.props.appName}/>

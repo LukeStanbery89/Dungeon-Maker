@@ -11,25 +11,19 @@ import { Games } from '../api/games.js';
 // Constants
 const APP_NAME = 'Dungeon Maker';
 
-// Variables
-let game;
-
 // App component - represents the whole app
 class App extends Component {
-	constructor(props) {
-		super(props);
-
-		game = this.props.game;
-	}
 	render() {
 		return (
-			<Game appName={APP_NAME} game={game}/>
+			<Game appName={APP_NAME} game={this.props.game}/>
 		);
 	}
 }
 
+// Provide reactivity between the database and the Game instance
 export default withTracker(() => {
+	let game = Games.findOne({});
 	return {
-		game: Games.findOne(),
+		game: game,
 	};
 })(App);
